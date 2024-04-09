@@ -1,82 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wallet Checker Bot Help</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            background-color: #f5f5f5;
-        }
-        main {
-            flex: 1;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        h1 {
-            margin-bottom: 20px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            text-align: left;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        code {
-            background-color: #f2f2f2;
-            padding: 2px 5px;
-            border-radius: 4px;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        footer {
-            background-color: #f5f5f5;
-            color: #888;
-            padding: 10px 0;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wallet Checker Help</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #f5f5f5;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      text-align: left;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    code {
+      background-color: #f2f2f2;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-family: "Courier New", Courier, monospace;
+    }
+
+    footer {
+      background-color: #f5f5f5;
+      color: #888;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .intro-text {
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+  </style>
 </head>
+
 <body>
-    <main>
-        <h1>Wallet Checker Bot Help</h1>
-        <p>You can control me by sending these commands:</p>
-        <h2>Admin:</h2>
-        <ul>
-            <li><code>/clearaddress</code> - Clears previously set address.</li>
-            <li><code>/setaddress</code> - Sets wallet address, remains set until cleared.</li>
-        </ul>
-        <h2>Balances:</h2>
-        <ul>
-            <li><code>/balance</code> - Checks the SGB, WSGB, FLR, WFLR balance of address.</li>
-            <li><code>/balancewflrblock [block]</code> - Check the WFLR balance of address on Flare at specified block.</li>
-            <li><code>/balancewsgbblock [block]</code> - Check the WSGB balance of address on Songbird at specified block.</li>
-        </ul>
-        <h2>Rewards and Epochs:</h2>
-        <ul>
-            <li><code>/unclaimedepochs</code> - Lists all epochs with unclaimed SGB & FLR rewards for address.</li>
-            <li><code>/unclaimedrewards</code> - Lists all unclaimed SGB & FLR rewards by epoch, with unclaimed amount.</li>
-        </ul>
-        <h2>Validator Rewards:</h2>
-        <ul>
-            <li><code>/validatorrewards</code> - Lists total, claimed and unclaimed rewards for address.</li>
-        </ul>
-    </main>
-    <!-- Copyright notice -->
-    <footer>
-        <p>&copy; 2024 Wallet Checker. All Rights Reserved. A subsidiary of AlgoTech LLC-FZ</p>
-    </footer>
+  <main>
+    <h1>Wallet Checker Help</h1>
+    <p class="intro-text">
+      Discover wallet information effortlessly with our Telegram bot.<br>
+      Simply use intuitive commands to access balances,
+      rewards, and more, all in one convenient platform.
+    </p>
+    <ul>
+      <li><code>/help</code> - Displays explanation of each bot command.</li>
+    </ul>
+    <h2>Admin:</h2>
+    <ul>
+      <li><code>/clearaddress</code> - Clears previously set address.</li>
+      <li><code>/setaddress</code> - Sets wallet address, remains set until cleared.</li>
+    </ul>
+    <h2>Balances:</h2>
+    <ul>
+      <li><code>/balance</code> - Checks the SGB, WSGB, FLR, WFLR balance of address.</li>
+      <li><code>/balancewflrblock [block]</code> - Check the WFLR balance of address on Flare at specified block.</li>
+      <li><code>/balancewsgbblock [block]</code> - Check the WSGB balance of address on Songbird at specified block.
+      </li>
+    </ul>
+    <h2>Rewards and Epochs:</h2>
+    <ul>
+      <li><code>/unclaimedepochs</code> - Lists all epochs with unclaimed SGB & FLR rewards for address.</li>
+      <li><code>/unclaimedrewards</code> - Lists all unclaimed SGB & FLR rewards by epoch, with unclaimed amount.</li>
+    </ul>
+    <h2>Validator Rewards:</h2>
+    <ul>
+      <li><code>/validatorrewards</code> - Lists total, claimed and unclaimed rewards for address.</li>
+    </ul>
+  </main>
+  <!-- Copyright notice -->
+  <footer>
+    <p>&copy; 2024 Wallet Checker. All Rights Reserved. A subsidiary of AlgoTech LLC-FZ</p>
+  </footer>
 </body>
+
 </html>
