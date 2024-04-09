@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet Checker Bot Help</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        code {
+            background-color: #f2f2f2;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Wallet Checker Bot Help</h1>
+    <p>You can control me by sending these commands:</p>
+    <h2>Admin:</h2>
+    <ul>
+        <li><code>/clearaddress</code> - Clears previously set address.</li>
+        <li><code>/setaddress</code> - Sets wallet address, remains set until cleared.</li>
+    </ul>
+    <h2>Balances:</h2>
+    <ul>
+        <li><code>/balance</code> - Checks the SGB, WSGB, FLR, WFLR balance of address.</li>
+        <li><code>/balancewflrblock [block]</code> - Check the WFLR balance of address on Flare at specified block.</li>
+        <li><code>/balancewsgbblock [block]</code> - Check the WSGB balance of address on Songbird at specified block.</li>
+    </ul>
+    <h2>Rewards and Epochs:</h2>
+    <ul>
+        <li><code>/unclaimedepochs</code> - Lists all epochs with unclaimed SGB & FLR rewards for address.</li>
+        <li><code>/unclaimedrewards</code> - Lists all unclaimed SGB & FLR rewards by epoch, with unclaimed amount.</li>
+    </ul>
+    <h2>Validator Rewards:</h2>
+    <ul>
+        <li><code>/validatorrewards</code> - Lists total, claimed and unclaimed rewards for address.</li>
+    </ul>
+</body>
+</html>
