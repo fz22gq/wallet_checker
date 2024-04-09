@@ -7,14 +7,30 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
         }
         h1 {
-            text-align: center;
+            margin-bottom: 20px;
         }
         ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
+            text-align: left;
         }
         li {
             margin-bottom: 10px;
@@ -25,37 +41,41 @@
             border-radius: 4px;
         }
         footer {
+            background-color: #f5f5f5;
+            color: #888;
+            padding: 10px 0;
             text-align: center;
-            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Wallet Checker Bot Help</h1>
-    <p>You can control me by sending these commands:</p>
-    <h2>Admin:</h2>
-    <ul>
-        <li><code>/clearaddress</code> - Clears previously set address.</li>
-        <li><code>/setaddress</code> - Sets wallet address, remains set until cleared.</li>
-    </ul>
-    <h2>Balances:</h2>
-    <ul>
-        <li><code>/balance</code> - Checks the SGB, WSGB, FLR, WFLR balance of address.</li>
-        <li><code>/balancewflrblock [block]</code> - Check the WFLR balance of address on Flare at specified block.</li>
-        <li><code>/balancewsgbblock [block]</code> - Check the WSGB balance of address on Songbird at specified block.</li>
-    </ul>
-    <h2>Rewards and Epochs:</h2>
-    <ul>
-        <li><code>/unclaimedepochs</code> - Lists all epochs with unclaimed SGB & FLR rewards for address.</li>
-        <li><code>/unclaimedrewards</code> - Lists all unclaimed SGB & FLR rewards by epoch, with unclaimed amount.</li>
-    </ul>
-    <h2>Validator Rewards:</h2>
-    <ul>
-        <li><code>/validatorrewards</code> - Lists total, claimed and unclaimed rewards for address.</li>
-    </ul>
+    <main>
+        <h1>Wallet Checker Bot Help</h1>
+        <p>You can control me by sending these commands:</p>
+        <h2>Admin:</h2>
+        <ul>
+            <li><code>/clearaddress</code> - Clears previously set address.</li>
+            <li><code>/setaddress</code> - Sets wallet address, remains set until cleared.</li>
+        </ul>
+        <h2>Balances:</h2>
+        <ul>
+            <li><code>/balance</code> - Checks the SGB, WSGB, FLR, WFLR balance of address.</li>
+            <li><code>/balancewflrblock [block]</code> - Check the WFLR balance of address on Flare at specified block.</li>
+            <li><code>/balancewsgbblock [block]</code> - Check the WSGB balance of address on Songbird at specified block.</li>
+        </ul>
+        <h2>Rewards and Epochs:</h2>
+        <ul>
+            <li><code>/unclaimedepochs</code> - Lists all epochs with unclaimed SGB & FLR rewards for address.</li>
+            <li><code>/unclaimedrewards</code> - Lists all unclaimed SGB & FLR rewards by epoch, with unclaimed amount.</li>
+        </ul>
+        <h2>Validator Rewards:</h2>
+        <ul>
+            <li><code>/validatorrewards</code> - Lists total, claimed and unclaimed rewards for address.</li>
+        </ul>
+    </main>
     <!-- Copyright notice -->
     <footer>
-        <p>2024 Wallet Checker. All Rights Reserved. A subsidiary of AlgoTech LLC-FZ</p>
+        <p>&copy; 2024 Wallet Checker. All Rights Reserved. A subsidiary of AlgoTech LLC-FZ</p>
     </footer>
 </body>
 </html>
